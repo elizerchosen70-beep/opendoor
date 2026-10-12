@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function recordVisitor(x){const r=await query('INSERT INTO visitors(name,contact,visit_date,follow_up_consent) VALUES($1,$2,$3,$4) RETURNING id,status',[x.name,x.contact||null,x.visitDate||null,Boolean(x.followUpConsent)]);return r.rows[0]}

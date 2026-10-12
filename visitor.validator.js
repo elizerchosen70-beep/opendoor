@@ -1,0 +1,1 @@
+import {z} from 'zod';export const visitorSchema=z.object({name:z.string().trim().min(1).max(100),contact:z.string().max(160).optional(),visitDate:z.string().optional(),followUpConsent:z.boolean().optional()});

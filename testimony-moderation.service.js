@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function submitTestimony(x){if(x.consent!==true)throw Object.assign(new Error('Consent is required.'),{status:400});const r=await query('INSERT INTO testimonies(title,display_name,body,consent,status) VALUES($1,$2,$3,true,\'pending\') RETURNING id,status',[x.title,x.displayName||null,x.body]);return r.rows[0]}

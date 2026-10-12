@@ -1,0 +1,1 @@
+export function validMediaUrl(v){try{const u=new URL(v);return u.protocol==='https:'&&['youtube.com','www.youtube.com','youtu.be','vimeo.com','player.vimeo.com'].includes(u.hostname)}catch{return false}}

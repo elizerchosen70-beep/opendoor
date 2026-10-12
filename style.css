@@ -1,0 +1,2 @@
+/* Optional common styling for future pages. The root index.html includes its own homepage styling. */
+:root{--brand-navy:#101a2b;--brand-gold:#d8b56d}body{font-family:system-ui,sans-serif}

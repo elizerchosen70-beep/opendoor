@@ -1,0 +1,1 @@
+import {z} from 'zod';export const prayerSchema=z.object({name:z.string().max(100).optional(),contact:z.string().max(160).optional(),body:z.string().trim().min(5).max(3000),followUpConsent:z.boolean().optional()});

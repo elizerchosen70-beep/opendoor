@@ -1,0 +1,1 @@
+import {z} from 'zod';export const testimonySchema=z.object({title:z.string().trim().min(2).max(120),displayName:z.string().max(100).optional(),body:z.string().trim().min(10).max(3000),consent:z.literal(true)});

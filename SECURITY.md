@@ -1,0 +1,2 @@
+# Security checklist
+Keep secrets out of GitHub. Use strong Render secrets. Restrict CORS to the real frontend origin. Implement email verification, password reset, session revocation and secure admin bootstrap before public signup. Enforce role checks server-side. Keep prayer requests private. Require moderation for testimonies. Verify payment callbacks server-side. Configure durable object storage before uploads.

@@ -1,0 +1,1 @@
+export function toast(message){let e=document.querySelector('[data-toast]');if(!e){e=document.createElement('div');e.dataset.toast='';e.setAttribute('role','status');document.body.append(e)}e.textContent=message}

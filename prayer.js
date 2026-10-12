@@ -1,0 +1,1 @@
+export const prayerPayload=x=>({name:String(x.name||'').slice(0,100),contact:String(x.contact||'').slice(0,160),body:String(x.body||'').trim().slice(0,3000),followUpConsent:Boolean(x.followUpConsent)});

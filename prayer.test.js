@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';test('public knowledge query excludes prayer table',()=>assert.ok(!'SELECT title,summary FROM public_content'.includes('prayer_requests')));

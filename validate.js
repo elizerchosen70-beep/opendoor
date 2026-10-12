@@ -1,0 +1,1 @@
+export const validate=schema=>(req,res,next)=>{const r=schema.safeParse(req.body);if(!r.success)return res.status(400).json({message:'Please check the submitted information.',issues:r.error.issues});req.validatedBody=r.data;next()};

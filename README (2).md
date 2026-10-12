@@ -1,0 +1,1 @@
+Express API starter. Health, public search/events/sermons, contact submission, login and Groq chat are implemented at starter level. Other feature modules remain disabled until their handlers, permissions and tests are complete.

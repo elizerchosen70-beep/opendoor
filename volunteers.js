@@ -1,0 +1,1 @@
+export const volunteerPayload=x=>({name:String(x.name||'').trim().slice(0,100),email:String(x.email||'').trim().slice(0,200),interest:String(x.interest||'').trim().slice(0,150),details:String(x.details||'').trim().slice(0,1500)});

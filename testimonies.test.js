@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {plainText} from '../utils/sanitise.js';test('sanitiser caps input',()=>assert.equal(plainText('abcdef',3),'abc'));
