@@ -1,0 +1,1 @@
+-- Prayer and testimony moderation reference. Canonical fresh-install schema is backend/database/schema.sql; use reviewed migrations for existing production databases.

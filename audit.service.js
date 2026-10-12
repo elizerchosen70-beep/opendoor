@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function audit({actorId,action,entityType,entityId}){await query('INSERT INTO audit_logs(actor_id,action,entity_type,entity_id) VALUES($1,$2,$3,$4)',[actorId||null,String(action).slice(0,100),String(entityType).slice(0,100),entityId||null])}

@@ -1,0 +1,1 @@
+export const CONTENT_STATUS=Object.freeze({DRAFT:'draft',PUBLISHED:'published',ARCHIVED:'archived'});export const TESTIMONY_STATUS=Object.freeze({PENDING:'pending',APPROVED:'approved',REJECTED:'rejected'});

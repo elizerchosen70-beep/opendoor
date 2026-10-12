@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function churchKnowledge(q){try{const r=await query('SELECT title,summary,content_type,slug FROM public_content WHERE published=true AND (title ILIKE $1 OR summary ILIKE $1) ORDER BY published_at DESC LIMIT 8',[`%${String(q).slice(0,100)}%`]);return r.rows}catch(e){if(e.message.includes('DATABASE_URL'))return [];throw e}}

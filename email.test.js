@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {normaliseEmail} from '../utils/email.js';test('email normalisation lowercases',()=>assert.equal(normaliseEmail('HI@EXAMPLE.COM'),'hi@example.com'));

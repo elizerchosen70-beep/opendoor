@@ -1,0 +1,1 @@
+export function textCard(title,description){const a=document.createElement('article'),h=document.createElement('h3'),p=document.createElement('p');a.className='card';h.textContent=title;p.textContent=description;a.append(h,p);return a}

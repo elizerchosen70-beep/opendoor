@@ -1,0 +1,1 @@
+export function validateEnvironment(env=process.env){const missing=['DATABASE_URL'].filter(k=>!env[k]);return {valid:missing.length===0,missing}}

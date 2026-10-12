@@ -1,0 +1,1 @@
+import {z} from 'zod';export const eventSchema=z.object({title:z.string().trim().min(2).max(160),summary:z.string().max(3000).optional(),startsAt:z.string().datetime(),location:z.string().max(250).optional()});

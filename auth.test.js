@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {validateEnvironment} from '../config/environment.js';test('missing database is detected',()=>assert.equal(validateEnvironment({}).valid,false));

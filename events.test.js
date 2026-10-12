@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {paginationFromQuery} from '../utils/pagination.js';test('pagination is bounded',()=>assert.equal(paginationFromQuery({limit:'900'}).limit,100));

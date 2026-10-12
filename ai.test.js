@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {rankPublicKnowledge} from '../services/knowledge-retrieval.service.js';test('knowledge ranking selects matches',()=>assert.equal(rankPublicKnowledge([{title:'Sunday service',summary:'worship'}],'Sunday').length,1));

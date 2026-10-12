@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function getPublishedContentBySlug(slug){const r=await query('SELECT title,summary,body,content_type,slug,published_at FROM public_content WHERE slug=$1 AND published=true LIMIT 1',[String(slug).slice(0,160)]);return r.rows[0]||null}

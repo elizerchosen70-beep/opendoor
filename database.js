@@ -1,0 +1,1 @@
+import pg from 'pg';const {Pool}=pg;export const pool=process.env.DATABASE_URL?new Pool({connectionString:process.env.DATABASE_URL,ssl:process.env.NODE_ENV==='production'?{rejectUnauthorized:false}:false,max:5,connectionTimeoutMillis:5000}):null;export async function query(sql,params=[]){if(!pool)throw new Error('DATABASE_URL is not configured.');return pool.query(sql,params)}

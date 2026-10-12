@@ -1,0 +1,2 @@
+# GitHub + Render deployment
+1. Push the repository to GitHub without `.env` or secrets. 2. Create PostgreSQL on Render. 3. Deploy the Node service with `npm install` and `npm start`. 4. Set `DATABASE_URL`, `SESSION_SECRET`, `FRONTEND_ORIGIN`, and optionally `GROQ_API_KEY`, `GROQ_MODEL`, `AI_ASSISTANT_ENABLED=true`. 5. Check `/api/health`. 6. Deploy the static root site on GitHub Pages or another static host. GitHub Pages cannot run Node.js. 7. Configure the frontend to call the Render API URL and set exact CORS origin. 8. Test all forms and roles before launch.
