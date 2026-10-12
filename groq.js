@@ -1,0 +1,1 @@
+export const groqConfig={enabled:process.env.AI_ASSISTANT_ENABLED==='true'&&Boolean(process.env.GROQ_API_KEY&&process.env.GROQ_MODEL),model:process.env.GROQ_MODEL||'',maxTokens:Math.min(1200,Math.max(100,Number(process.env.AI_MAX_TOKENS||700))),temperature:Math.min(1,Math.max(0,Number(process.env.AI_TEMPERATURE||.3)))};

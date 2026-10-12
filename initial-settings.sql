@@ -1,0 +1,1 @@
+-- No fake content or default administrator is seeded. Add only verified church information through a secure setup process.

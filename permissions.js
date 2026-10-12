@@ -1,0 +1,1 @@
+export const roles={SUPER_ADMIN:'super_admin',CONTENT_ADMIN:'content_admin',EMAIL_ADMIN:'email_admin',PRAYER_ADMIN:'prayer_admin',TESTIMONY_MODERATOR:'testimony_moderator',MINISTRY_ADMIN:'ministry_admin',MEMBER:'member'};export const hasRole=(u,...r)=>Boolean(u&&r.includes(u.role));

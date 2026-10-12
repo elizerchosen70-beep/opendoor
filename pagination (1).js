@@ -1,0 +1,1 @@
+export function paginate(items,page=1,size=10){size=Math.max(1,size);const pages=Math.max(1,Math.ceil(items.length/size));page=Math.min(pages,Math.max(1,page));return {items:items.slice((page-1)*size,page*size),page,pages,total:items.length}}

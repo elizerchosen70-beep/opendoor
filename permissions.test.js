@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {hasRole} from '../utils/permissions.js';test('roles match exactly',()=>{assert.equal(hasRole({role:'member'},'super_admin'),false);assert.equal(hasRole({role:'super_admin'},'super_admin'),true)});

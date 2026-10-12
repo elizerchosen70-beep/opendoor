@@ -1,0 +1,1 @@
+export function setLoading(button,on,label='Please wait…'){if(!button)return;button.disabled=on;if(on){button.dataset.original=button.textContent;button.textContent=label}else button.textContent=button.dataset.original||button.textContent}

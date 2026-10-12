@@ -1,0 +1,1 @@
+import {query} from '../config/database.js';export async function createPrayerRequest(x){const r=await query('INSERT INTO prayer_requests(name,contact,body,follow_up_consent) VALUES($1,$2,$3,$4) RETURNING id,status',[x.name||null,x.contact||null,x.body,Boolean(x.followUpConsent)]);return r.rows[0]}

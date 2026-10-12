@@ -1,0 +1,1 @@
+export const highlightCurrentNav=()=>document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.hash===location.hash));addEventListener('hashchange',highlightCurrentNav);highlightCurrentNav();

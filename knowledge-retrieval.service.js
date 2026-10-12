@@ -1,0 +1,1 @@
+export function rankPublicKnowledge(items,q){const terms=String(q).toLowerCase().split(/\s+/).filter(Boolean);return items.map(x=>({...x,score:terms.reduce((n,t)=>n+((x.title+' '+x.summary).toLowerCase().includes(t)?1:0),0)})).filter(x=>x.score).sort((a,b)=>b.score-a.score).slice(0,8)}

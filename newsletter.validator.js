@@ -1,0 +1,1 @@
+import {z} from 'zod';export const newsletterSchema=z.object({email:z.string().email().max(200),consent:z.literal(true),events:z.boolean().optional(),sermons:z.boolean().optional(),monthly:z.boolean().optional()});

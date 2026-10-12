@@ -1,0 +1,1 @@
+export async function verifyPaymentReference(reference){if(!process.env.PAYSTACK_SECRET_KEY)throw new Error('Payment provider is not configured.');if(!reference)throw new Error('Payment reference is required.');throw new Error('Implement and test provider verification before enabling payments.')}

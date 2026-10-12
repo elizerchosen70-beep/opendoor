@@ -1,0 +1,1 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {rankPublicKnowledge} from '../services/knowledge-retrieval.service.js';test('irrelevant knowledge filtered',()=>assert.equal(rankPublicKnowledge([{title:'Choir',summary:'music'}],'rocket').length,0));
